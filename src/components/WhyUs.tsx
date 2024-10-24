@@ -68,7 +68,7 @@ export default function WhyUs({ isWhiteText }: WhyUsProps) {
     };
 
     return (
-        <div id="why-us-section" className="flex flex-col justify-between relative z-30 pt-20 md:pt-44 bg-stone-100">
+        <div id="why-us-section" className="flex flex-col justify-between relative z-20 pt-20 md:pt-44 bg-stone-100">
             <div ref={ref}>
                 {paragraph.map((text, index) => (
                     <motion.div

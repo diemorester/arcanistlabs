@@ -8,7 +8,7 @@ import img6 from "../assets/darth-vader.png"
 
 export default function Marque() {
     return (
-        <div className="flex flex-col max-md:gap-9 md:gap-3 pt-5 p-6 md:px-11 md:flex-row md:h-[150px] bg-stone-100 relative z-30">
+        <div className="flex flex-col max-md:gap-9 md:gap-3 pt-5 p-6 md:px-11 md:flex-row md:h-[150px] bg-stone-100 relative z-20">
             <div className="place-content-center text-center text-sm md:text-xl md:w-1/3">
                 <p>trusted by <span className="font-bold">666+ </span>companies.</p>
             </div>

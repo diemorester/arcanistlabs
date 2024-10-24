@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { MdOutlineClose } from 'react-icons/md';
@@ -22,6 +22,18 @@ export default function ContactModalButton() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [messageCount, setMessageCount] = useState(0);
 
+    useEffect(() => {
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto'
+        }
+    }, [isModalOpen]);
+
     return (
         <>
             <button
@@ -39,7 +51,7 @@ export default function ContactModalButton() {
                 </span>
             </button>
             {isModalOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="bg-stone-100 p-8 w-full max-w-md mx-auto rounded shadow-md relative">
                         <button
                             onClick={() => setIsModalOpen(false)}

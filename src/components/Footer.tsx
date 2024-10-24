@@ -20,22 +20,21 @@ const ContactSchema = Yup.object().shape({
 export default function Footer() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [messageCount, setMessageCount] = useState(0);
-    const [showFooter, setShowFooter] = useState(false);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            setShowFooter(true);
-        }, 1000);
+        if (isModalOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
 
-        return () => clearTimeout(timer);
-    }, []);
+        return () => {
+            document.body.style.overflow = 'auto'
+        }
+    }, [isModalOpen]);
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
-
-    if (!showFooter) {
-        return null;
-    }
 
     return (
         <>
