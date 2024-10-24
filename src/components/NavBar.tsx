@@ -61,17 +61,17 @@ export default function NavBar() {
                 ${isAfterWhyUs ? "text-white" : isScrolled ? "text-black" : "text-white"}`}>
                 <div className="z-50 transition-transform ease-in-out" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                     {!isMenuOpen ? (
-                        <button aria-label="navbar">
+                        <button aria-label="open">
                             <HiMenuAlt2 size={35} fill={isAfterWhyUs ? "white" : isScrolled ? "black" : "white"} />
                         </button>
                     ) : (
-                        <button>
+                        <button aria-label="close">
                             <MdOutlineClose size={35} fill="black" />
                         </button>
                     )}
                 </div>
                 <a href="#hero-section">
-                    <button className={`font-bold px-[10px] md:text-3xl ${isMenuOpen ? 'hidden' : 'visible'}`}>
+                    <button className={`font-bold px-[12px] md:text-3xl ${isMenuOpen ? 'hidden' : 'visible'}`}>
                         // ArcanistLabs
                     </button>
                 </a>
