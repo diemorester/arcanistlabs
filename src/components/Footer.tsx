@@ -42,31 +42,31 @@ export default function Footer() {
                 <div className="flex flex-wrap gap-10 justify-center md:gap-[120px] md:text-3xl text-center">
                     <a className="relative group">
                         <button>
-                            <span className="relative z-10">Instagram</span>
+                            <span className="relative">Instagram</span>
                             <span className="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                         </button>
                     </a>
                     <a className="relative group">
                         <button>
-                            <span className="relative z-10">YouTube</span>
+                            <span className="relative">YouTube</span>
                             <span className="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                         </button>
                     </a>
                     <a className="relative group">
                         <button>
-                            <span className="relative z-10">Twitter</span>
+                            <span className="relative">Twitter</span>
                             <span className="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                         </button>
                     </a>
                     <a className="relative group">
                         <button>
-                            <span className="relative z-10">Facebook</span>
+                            <span className="relative">Facebook</span>
                             <span className="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                         </button>
                     </a>
                     <a onClick={openModal} className="relative group">
                         <button>
-                            <span className="relative z-10">Email</span>
+                            <span className="relative">Email</span>
                             <span className="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
                         </button>
                     </a>

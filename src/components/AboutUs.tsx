@@ -29,7 +29,7 @@ export default function AboutUs() {
     }, []);
 
     return (
-        <div className="pointer-events-none">
+        <div className="">
             <div>
                 <WhyUs isWhiteText={isWhiteText} />
             </div>
@@ -44,9 +44,9 @@ export default function AboutUs() {
                     color: "#000000",
                 }}
                 transition={{ duration: 0.2 }}
-                className="min-h-screen relative z-30 md:p-11"
+                className="min-h-screen relative z-20 md:p-11"
             >
-                <div className="text-5xl md:text-9xl font-bold px-6 text-end absolute z-30 md:right-12 bottom-1/2 md:bottom-1/4">
+                <div className="text-5xl md:text-9xl font-bold px-6 text-end absolute z-20 md:right-12 bottom-1/2 md:bottom-1/4">
                     // Features
                 </div>
             </motion.div>

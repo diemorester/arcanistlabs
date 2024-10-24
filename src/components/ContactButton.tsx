@@ -51,7 +51,7 @@ export default function ContactModalButton() {
                 </span>
             </button>
             {isModalOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="fixed inset-0 z-30 flex items-center justify-center bg-black bg-opacity-50">
                     <div className="bg-stone-100 p-8 w-full max-w-md mx-auto rounded shadow-md relative">
                         <button
                             onClick={() => setIsModalOpen(false)}

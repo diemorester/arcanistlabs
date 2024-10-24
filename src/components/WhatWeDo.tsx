@@ -65,7 +65,7 @@ const content = [
   
   export default function WhatWeDo() {
     return (
-      <div id="what-we-do-section" className="relative z-30">
+      <div id="what-we-do-section" className="relative z-20">
         <StickyScroll content={content} />
       </div>
     );
