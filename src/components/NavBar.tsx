@@ -85,7 +85,7 @@ export default function NavBar() {
                         <a href="#about-us-section" className="hover:text-neutral-500" onClick={handleClose}>FEATURES</a>
                     </div>
                     <div>
-                        <a href="/" className="hover:text-neutral-500" onClick={handleClose}>OUR PROJECTS</a>
+                        <a href="#footer-section" className="hover:text-neutral-500" onClick={handleClose}>CONTACT US</a>
                     </div>
                 </div>
             </div>
