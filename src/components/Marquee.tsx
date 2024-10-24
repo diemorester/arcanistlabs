@@ -13,12 +13,12 @@ export default function Marque() {
                 <p>trusted by <span className="font-bold">666+ </span>companies.</p>
             </div>
             <Marquee className="md:w-3/5" autoFill gradient gradientWidth={50} gradientColor="#f5f5f4">
-                <img src={img1} width={100} height={50} className="px-5" />
-                <img src={img3} width={100} height={50} className="px-5" />
-                <img src={img6} width={100} height={50} className="px-5" />
-                <img src={img5} width={130} height={50} className="px-5" />
-                <img src={img2} width={100} height={50} className="px-5" />
-                <img src={img4} width={100} height={50} className="px-5" />
+                <img src={img1} width={100} height={50} alt="img-marquee1" className="px-5" />
+                <img src={img3} width={100} height={50} alt="img-marquee2" className="px-5" />
+                <img src={img6} width={100} height={50} alt="img-marquee3" className="px-5" />
+                <img src={img5} width={130} height={50} alt="img-marquee4" className="px-5" />
+                <img src={img2} width={100} height={50} alt="img-marquee5" className="px-5" />
+                <img src={img4} width={100} height={50} alt="img-marquee6" className="px-5" />
             </Marquee>
         </div>
     )
