@@ -71,9 +71,9 @@ export default function NavBar() {
                     )}
                 </div>
                 <a href="#hero-section">
-                    <button className={`font-bold px-[12px] md:text-3xl ${isMenuOpen ? 'hidden' : 'visible'}`}>
+                    <div className={`font-bold md:text-3xl ${isMenuOpen ? 'hidden' : 'visible'}`}>
                         // ArcanistLabs
-                    </button>
+                    </div>
                 </a>
             </div>
             <div className={`transition-all bg-stone-200 ease-in-out duration-500 fixed inset-0 z-40 ${isMenuOpen ? 'w-full h-full' : 'h-0 overflow-hidden'}`}>
