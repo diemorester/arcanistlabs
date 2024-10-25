@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { MdOutlineClose } from 'react-icons/md';
@@ -20,6 +20,15 @@ const ContactSchema = Yup.object().shape({
 export default function Footer() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [messageCount, setMessageCount] = useState(0);
+    const [showFooter, setShowFooter] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setShowFooter(true);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, []);
 
     // useEffect(() => {
     //     if (isModalOpen) {
@@ -35,6 +44,10 @@ export default function Footer() {
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
+
+    if (!showFooter) {
+        return null;
+    }
 
     return (
         <>
